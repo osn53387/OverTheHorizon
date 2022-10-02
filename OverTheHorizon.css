@@ -10,10 +10,15 @@ h1 {
 
 p {
     font-size: 32px;
+    
 }
 
 .World-Time {
     font-size: 128px;
+    padding: 3px;
+    display: inline;
+    border: 1px solid white;
+    padding: 5%;
 }
 
 .TopUI {
