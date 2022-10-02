@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./OverTheHorizon.css">
-    <script src="./OverTheHorizon.js"></script>
+    <script src="./OverTheHorizon.js" defer></script>
     <title>Over the Horizon</title>
 </head>
 <body onload="startTime()">
@@ -21,6 +21,16 @@
                 touch the border below-->
     <br>
     <div id="Live Clock" class="World-Time"></div>
-    
+    <div>
+        <button id="New-Project" type="button" onclick="startNewProject()">Set up new project</button>
+        <div class="Pop-up" id="Pop-up">
+            <h2>New Project</h2>
+            <p>Project Name</p>
+            <input type="text" placeholder="Project Name">
+            <input type="date">
+            <button type="submit" onclick="finalizeNewProject()">Begin the Countdown</button>
+        </div>
+        <button id="Continue-Project" class="Continue-Project" type="button">Continue current journey</button>
+    </div>
 </body>
 </html>

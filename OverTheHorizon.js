@@ -12,3 +12,13 @@ function startTime() {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
   }
+
+  let popup = document.getElementById("Pop-up");
+
+  function startNewProject() {
+        popup.classList.add("open-Pop-up");
+  }
+
+  function finalizeNewProject() {
+        popup.classList.remove("open-Pop-up");
+  }
