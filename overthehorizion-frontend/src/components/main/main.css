@@ -1,0 +1,98 @@
+body {
+  background-image: url("./../../assets/images/UnfoldedRedJaguarundi-max-1mb.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+p {
+  font-size: 32px;
+  margin-bottom: 100px;
+  margin-top: 0;
+}
+
+.Front-Background {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  background-color: black;
+  color: white;
+  width: 50%;
+  height: 600px;
+  opacity: 0.8;
+}
+
+.World-Time {
+  font-size: 128px;
+  padding: 3px;
+  display: inline;
+  border: 1px solid white;
+  padding: 5%;
+}
+
+.TopUI {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.TopUI button {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 14px 40px;
+  font-size: 16px;
+  height: inherit;
+}
+
+.Continue-Project {
+  margin-top: 40px;
+}
+
+.Pop-up {
+  width: 50%;
+  height: 60%;
+  border-radius: 5px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  text-align: center;
+  padding: 0 30px 30px;
+  background-color: white;
+  color: black;
+  visibility: hidden;
+}
+
+.open-Pop-up {
+  visibility: visible;
+}
+
+.Main-Buttons {
+  margin-top: 85px;
+}
+
+.Main-Buttons button {
+  font-size: 18px;
+}
+
+#New-Project {
+  margin-right: 20px;
+  padding: 20px;
+}
+
+#Continue-Project {
+  padding: 20px;
+}
+
+#Time-Remaining {
+  padding-top: 50px;
+  font-size: 64px;
+}
