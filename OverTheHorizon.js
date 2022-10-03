@@ -5,7 +5,7 @@ function startTime() {
     let seconds = today.getSeconds();
     minutes = checkTime(minutes);
     seconds = checkTime(seconds);
-    document.getElementById('Live Clock').innerHTML =  hours + ":" + minutes + ":" + seconds;
+    document.getElementById('Live-Clock').innerHTML =  hours + ":" + minutes + ":" + seconds;
     setTimeout(startTime, 1000);
   }
 
@@ -34,8 +34,15 @@ function startTime() {
     let calculateTimeDifference = todayDate.getTime() - Goal.getTime();
     let dayDifference = Math.ceil(calculateTimeDifference / (1000 * 3600 * 24));
     
-    if (dayDifference == 10) {
+    if (dayDifference <= 10) {
        let remainingTime = calculateTimeDifference / (1000 * 3600);
+       document.getElementById('Time-Remaining').innerHTML = remainingTime;
+       setTimeout(calculateTimeDifference, 1000);
     }
     // Will need a date validation here
+  }
+
+  function displayProjectName() {
+    let projectName = document.getElementById('Name-For-Project').innerHTML;
+
   }
