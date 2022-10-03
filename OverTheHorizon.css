@@ -1,10 +1,14 @@
 body {
-    background-color: black;
-    color: white;
+    background-image: url("images/UnfoldedRedJaguarundi-max-1mb.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     padding: 0;
     margin: 0;
+    height: 100%;
+    overflow: hidden;
 }
+
 
 h1 {
     font-size: 64px;
@@ -14,6 +18,16 @@ p {
     font-size: 32px;
     margin-bottom: 100px;
     margin-top: 0;
+}
+
+.Front-Background {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 600px;
 }
 
 .World-Time {
@@ -28,6 +42,13 @@ p {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.TopUI button {
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 14px 40px;
+    height: inherit;
 }
 
 .Continue-Project {
@@ -55,7 +76,12 @@ p {
 
 }
 
+.Main-Buttons {
+    margin-top: 85px;
+}
+
 #New-Project {
+    margin-right: 20px;
     padding: 20px;
 }
 
@@ -65,4 +91,5 @@ p {
 
 #Time-Remaining {
     padding-top: 50px;
+    font-size: 64px;
 }
