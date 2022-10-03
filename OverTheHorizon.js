@@ -10,7 +10,8 @@ function startTime() {
   }
 
   function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    if (i < 10) {i = "0" + i} 
+    else if (i == 0) {i = 00}; // add zero in front of numbers < 10
     return i;
   }
 
