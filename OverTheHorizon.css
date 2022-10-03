@@ -48,6 +48,7 @@ p {
     margin-right: 10px;
     margin-top: 10px;
     padding: 14px 40px;
+    font-size: 16px;
     height: inherit;
 }
 
@@ -56,11 +57,11 @@ p {
 }
  
 .Pop-up {
-    width: 40%;
-    height: 50%;
+    width: 50%;
+    height: 60%;
     border-radius: 5px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -80%);
     text-align: center;
@@ -72,12 +73,14 @@ p {
 
 .open-Pop-up {
     visibility: visible;
-    top: 50%;
-
 }
 
 .Main-Buttons {
     margin-top: 85px;
+}
+
+.Main-Buttons button {
+    font-size: 18px;
 }
 
 #New-Project {
