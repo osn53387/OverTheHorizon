@@ -23,21 +23,24 @@ function startTime() {
 
   function finalizeNewProject() {
     popup.classList.remove("open-Pop-up");
+    calculateTimeDifference();
   }
 
   function calculateTimeDifference() {
     const today = new Date();
     let todayDate = today.getDate();
 
-    let placeHolder = document.getElementById("Date-For-Goal").innerHTML;
+    let placeHolder = document.getElementById('Date-For-Goal');
     let Goal = placeHolder.getDate();
 
     let calculateTimeDifference = todayDate.getTime() - Goal.getTime();
     let dayDifference = Math.ceil(calculateTimeDifference / (1000 * 3600 * 24));
-    
+    document.getElementById('Live-Clock').innerHTML = dayDifference + " days left";
+    setTimeout(calculateTimeDifference, -(1000 * 3600 * 24));
+
     if (dayDifference <= 10) {
        let remainingTime = calculateTimeDifference / (1000 * 3600);
-       document.getElementById('Time-Remaining').innerHTML = remainingTime;
+       document.getElementById('Live-Clock').innerHTML = remainingTime;
        setTimeout(calculateTimeDifference, 1000);
     }
     // Will need a date validation here
