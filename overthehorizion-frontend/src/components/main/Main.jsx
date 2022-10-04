@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import { React, useEffect, useState } from "react";
 import "./main.css";
 
 const Main = () => {
@@ -11,7 +11,7 @@ const Main = () => {
     seconds = checkTime(seconds);
     document.getElementById("Live-Clock").innerHTML =
       hours + ":" + minutes + ":" + seconds;
-    setTimeout(startTime, 1000);
+    setInterval(startTime, 1000);
   }
 
   function checkTime(i) {
@@ -45,12 +45,12 @@ const Main = () => {
     let dayDifference = Math.ceil(calculateTimeDifference / (1000 * 3600 * 24));
     document.getElementById("Live-Clock").innerHTML =
       dayDifference + " days left";
-    setTimeout(calculateTimeDifference, -(1000 * 3600 * 24));
+    setInterval(calculateTimeDifference, -(1000 * 3600 * 24));
 
     if (dayDifference <= 10) {
       let remainingTime = calculateTimeDifference / (1000 * 3600);
       document.getElementById("Live-Clock").innerHTML = remainingTime;
-      setTimeout(calculateTimeDifference, 1000);
+      setInterval(calculateTimeDifference, 1000);
     }
     // Will need a date validation here
   }
