@@ -35,8 +35,12 @@ p {
   background-color: black;
   color: white;
   width: fit-content;
-
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding: 3em;
+  /* padding: calc(1em + 100vw/64); */
   opacity: 0.8;
 }
 
@@ -47,7 +51,7 @@ p {
 }
 
 .TopUI {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
 }
@@ -55,7 +59,7 @@ p {
 .TopUI button {
   margin-right: 10px;
   margin-top: 10px;
-  padding: 14px 40px;
+  padding: calc(5px + 100vw/64) calc(10px + 100vh/64); /* 14px 40px */
   font-size: calc(8px 100vw/50);
   /* height: inherit; */
 }
