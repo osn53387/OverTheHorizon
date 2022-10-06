@@ -39,7 +39,7 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* padding: calc(1em + 100vw/64); */
+  padding: calc(10px + 100vw/64) calc(15px + 100vh/64);
   opacity: 0.8;
 }
 

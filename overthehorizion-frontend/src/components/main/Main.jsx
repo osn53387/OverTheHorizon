@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from "react";
 import "./main.css";
+import { Popup } from "OverTheHorizon/overthehorizion-frontend/src/components/popup/Popup.jsx"
 
 const Main = () => {
   function startTime() {
@@ -45,7 +46,7 @@ const Main = () => {
     let dayDifference = Math.ceil(calculateTimeDifference / (1000 * 3600 * 24));
     document.getElementById("Live-Clock").innerHTML =
       dayDifference + " days left";
-    setInterval(calculateTimeDifference, -(1000 * 3600 * 24));
+    setInterval(calculateTimeDifference,  (1000 * 3600 * 24));
 
     if (dayDifference <= 10) {
       let remainingTime = calculateTimeDifference / (1000 * 3600);
@@ -85,7 +86,7 @@ const Main = () => {
         <p>You can see, so go and meet it.</p>
         <div id="Live-Clock" className="World-Time"></div>
         <div className="Main-Buttons">
-          <button id="New-Project" type="button" onclick="startNewProject()">
+          <button id="New-Project" type="button" onClick="startNewProject()">
             Set up new project
           </button>
           <div className="Pop-up" id="Pop-up">
@@ -96,7 +97,7 @@ const Main = () => {
               placeholder="Project Name"
             />
             <input type="date" id="Date-for-Goal" />
-            <button type="submit" onclick="finalizeNewProject()">
+            <button type="submit" onClick="finalizeNewProject()">
               Begin the Countdown
             </button>
           </div>
