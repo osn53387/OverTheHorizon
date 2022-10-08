@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from "react";
 import "./main.css";
-import { Popup } from "OverTheHorizon/overthehorizion-frontend/src/components/popup/Popup.jsx"
+// import { Popup } from "OverTheHorizon/overthehorizion-frontend/src/components/popup/Popup.jsx"
 
 const Main = () => {
   function startTime() {
