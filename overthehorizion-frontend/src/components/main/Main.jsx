@@ -26,7 +26,7 @@ const Main = () => {
 
   let popup = document.getElementById("Pop-up");
 
-  function startNewProject() {
+  const startNewProject = () => {
     popup.classList.add("open-Pop-up");
   }
 
@@ -86,7 +86,7 @@ const Main = () => {
         <p>You can see, so go and meet it.</p>
         <div id="Live-Clock" className="World-Time"></div>
         <div className="Main-Buttons">
-          <button id="New-Project" type="button" onClick="startNewProject()">
+          <button id="New-Project" type="button" onClick={startNewProject}>
             Set up new project
           </button>
           <div className="Pop-up" id="Pop-up">
@@ -97,7 +97,7 @@ const Main = () => {
               placeholder="Project Name"
             />
             <input type="date" id="Date-for-Goal" />
-            <button type="submit" onClick="finalizeNewProject()">
+            <button type="submit" onClick={finalizeNewProject}>
               Begin the Countdown
             </button>
           </div>
