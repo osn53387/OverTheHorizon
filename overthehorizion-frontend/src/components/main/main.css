@@ -107,3 +107,11 @@ p {
   padding-top: 50px;
   font-size: 64px;
 }
+
+#Sign-Up {
+  width: 50%;
+  height: 50%;
+  visibility: visible; /* Toggle with hidden as needed */
+  background-color: aliceblue;
+  /* position: absolute; */
+}

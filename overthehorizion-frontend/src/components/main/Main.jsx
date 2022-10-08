@@ -35,6 +35,10 @@ const Main = () => {
     // Will need a date validation here
   }
 
+  function signUp() {
+
+  }
+
   function displayProjectName() {
     let projectName = document.getElementById("Name-For-Project").value;
 
@@ -46,6 +50,7 @@ const Main = () => {
       let hours = today.getHours();
       let minutes = today.getMinutes();
       let seconds = today.getSeconds();
+      hours = checkTime(hours);
       minutes = checkTime(minutes);
       seconds = checkTime(seconds);
       document.getElementById("Live-Clock").innerHTML =
@@ -65,6 +70,14 @@ const Main = () => {
 
   return (
     <div>
+      <div id="Sign-Up">
+          <h1>New User</h1>
+          <p>email</p>
+          <input type="text" placeHolder="email"/>
+          <p>password</p>
+          <input type="text" placeHolder="email"/>
+          <button type="button">Register</button>
+        </div>
       <div className="TopUI">
         <button type="button">Sign up!</button>
         <button type="button">Login</button>
