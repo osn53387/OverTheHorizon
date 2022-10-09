@@ -11,10 +11,7 @@ body {
   background-attachment: fixed;
   text-align: center;
   padding: 0;
-  margin: 0; 
-  /* height: 100vh; */
-  /* height: inherit; */
-  /* overflow: hidden;
+  margin: 0;
 }
 
 h1 {
@@ -44,10 +41,10 @@ p {
 }
 
 .World-Time {
-  font-size: calc(20px + 100vw/50);
+  /* font-size: calc(20px + 100vw/50);
   /* width: 100%; */
-  border: 1px solid white;
-}
+  /* border: 1px solid white; */
+} 
 
 .TopUI {
   position: fixed;
