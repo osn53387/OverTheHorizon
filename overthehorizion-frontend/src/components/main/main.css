@@ -1,7 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 
 body {
   background-image: url("./../../assets/images/UnfoldedRedJaguarundi-max-1mb.gif");
@@ -14,7 +18,7 @@ body {
   margin: 0; 
   /* height: 100vh; */
   /* height: inherit; */
-  /* overflow: hidden;
+  /* overflow: hidden; */
 }
 
 h1 {
