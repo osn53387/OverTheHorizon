@@ -1,5 +1,9 @@
 import { React, useEffect, useState } from "react";
 import "./main.css";
+
+import { SignUp } from "../sub-components/SignUp";
+
+import Popup from 'reactjs-popup';
 // import { Popup } from "OverTheHorizon/overthehorizion-frontend/src/components/popup/Popup.jsx"
 
 const Main = () => {
@@ -70,16 +74,10 @@ const Main = () => {
 
   return (
     <div>
-      <div id="Sign-Up">
-          <h1>New User</h1>
-          <p>email</p>
-          <input type="text" placeHolder="email"/>
-          <p>password</p>
-          <input type="text" placeHolder="email"/>
-          <button type="button">Register</button>
-        </div>
       <div className="TopUI">
-        <button type="button">Sign up!</button>
+        <Popup trigger={<button className="border-yellow-300 rounded border-4" type="button">Sign up!</button>}>
+          <SignUp/>
+        </Popup>
         <button type="button">Login</button>
       </div>
       <div className="Front-Background">
