@@ -1,8 +1,13 @@
-import React, { Component } from "react";
+
+import React, { Component } from 'react';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
+
 
 export default () => (
   <Popup trigger={<button> Trigger</button>} position="right center">
     <div>
+
       <div className="Pop-up" id="Pop-up">
         <h2>New Project</h2>
         <input type="text" id="Name-For-Project" placeholder="Project Name" />
