@@ -3,7 +3,9 @@ import "./main.css";
 
 import { SignUp } from "../sub-components/SignUp";
 
-import Popup from "reactjs-popup";
+
+import Popup from 'reactjs-popup';
+
 // import { Popup } from "OverTheHorizon/overthehorizion-frontend/src/components/popup/Popup.jsx"
 
 const Main = () => {
@@ -72,6 +74,7 @@ const Main = () => {
   return (
     <div>
       <div className="TopUI">
+
         <Popup trigger={<button type="button">Sign up!</button>}>
           <SignUp />
         </Popup>

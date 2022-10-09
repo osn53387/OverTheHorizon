@@ -1,11 +1,7 @@
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 body {
   background-image: url("./../../assets/images/UnfoldedRedJaguarundi-max-1mb.gif");
@@ -15,10 +11,10 @@ body {
   background-attachment: fixed;
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin: 0; 
   /* height: 100vh; */
   /* height: inherit; */
-  /* overflow: hidden; */
+  /* overflow: hidden;
 }
 
 h1 {
@@ -113,5 +109,10 @@ p {
   height: 50%;
   visibility: visible; /* Toggle with hidden as needed */
   background-color: aliceblue;
+
   /* position: absolute; */
+}
+
+#Sign-Up h1 {
+  font-size: calc(12px + 100vw/150);
 }
