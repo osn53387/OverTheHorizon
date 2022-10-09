@@ -1,5 +1,9 @@
 import { React, useEffect, useState } from "react";
 import "./main.css";
+
+import { SignUp } from "../sub-components/SignUp";
+
+import Popup from "reactjs-popup";
 // import { Popup } from "OverTheHorizon/overthehorizion-frontend/src/components/popup/Popup.jsx"
 
 const Main = () => {
@@ -7,7 +11,7 @@ const Main = () => {
 
   const startNewProject = () => {
     popup.classList.add("open-Pop-up");
-  }
+  };
 
   function finalizeNewProject() {
     popup.classList.remove("open-Pop-up");
@@ -25,7 +29,7 @@ const Main = () => {
     let dayDifference = Math.ceil(calculateTimeDifference / (1000 * 3600 * 24));
     document.getElementById("Live-Clock").innerHTML =
       dayDifference + " days left";
-    setInterval(calculateTimeDifference,  (1000 * 3600 * 24));
+    setInterval(calculateTimeDifference, 1000 * 3600 * 24);
 
     if (dayDifference <= 10) {
       let remainingTime = calculateTimeDifference / (1000 * 3600);
@@ -35,13 +39,10 @@ const Main = () => {
     // Will need a date validation here
   }
 
-  function signUp() {
-
-  }
+  function signUp() {}
 
   function displayProjectName() {
     let projectName = document.getElementById("Name-For-Project").value;
-
   }
 
   useEffect(() => {
@@ -70,16 +71,10 @@ const Main = () => {
 
   return (
     <div>
-      <div id="Sign-Up">
-          <h1>New User</h1>
-          <p>email</p>
-          <input type="text" placeHolder="email"/>
-          <p>password</p>
-          <input type="text" placeHolder="email"/>
-          <button type="button">Register</button>
-        </div>
       <div className="TopUI">
-        <button type="button">Sign up!</button>
+        <Popup trigger={<button type="button">Sign up!</button>}>
+          <SignUp />
+        </Popup>
         <button type="button">Login</button>
       </div>
       <div className="Front-Background">
