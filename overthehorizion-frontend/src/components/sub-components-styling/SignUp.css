@@ -1,0 +1,22 @@
+#Sign-Up {
+    width: fit-content;
+    height: inherit;
+    padding: calc(30px + 100vw/150);
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+#Sign-Up h1 {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+#Sign-Up button {
+    height: 40px;
+    width: 100%;
+    margin-left: 0;
+}
