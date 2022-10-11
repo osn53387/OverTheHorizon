@@ -1,4 +1,4 @@
-#Sign-Up {
+#Login {
     width: fit-content;
     height: fit-content;
     padding: calc(30px + 100vw/150);
@@ -9,26 +9,25 @@
     flex-direction: column;
 }
 
-#Sign-Up h1 {
+#Login h1 {
+    width: 100%;
     font-size: 32px;
     text-align: center;
 }
 
-#Sign-Up p {
+#Login p {
     font-size: 18px;
     margin-left: 0;
 }
 
-#Sign-Up input {
+#Login input {
+    width: 100%;
     padding: 0;
     box-sizing: border-box;
 }
 
-#Sign-Up button {
+#Login button {
     height: 40px;
-    margin: 10px 0 10px;
-}
-
-#Sign-Up h1, p, input, button {
     width: 100%;
+    margin: 10px 0 10px;
 }

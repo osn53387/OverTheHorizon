@@ -2,6 +2,7 @@ import { React, useEffect, useState } from "react";
 import "./main.css";
 
 import { SignUp } from "../sub-components/SignUp";
+import { Login } from "../sub-components/Login";
 
 import Popup from "reactjs-popup";
 
@@ -40,7 +41,9 @@ const Main = () => {
     // Will need a date validation here
   }
 
-  function signUp() {}
+  function signUp() {
+    // implement backend storage
+  }
 
   function displayProjectName() {
     let projectName = document.getElementById("Name-For-Project").value;
@@ -76,7 +79,9 @@ const Main = () => {
         <Popup trigger={<button type="button">Sign up!</button>}>
           <SignUp />
         </Popup>
-        <button type="button">Login</button>
+        <Popup trigger={<button type="button">Login</button>}>
+          <Login />
+        </Popup>
       </div>
       <div className="Front-Background">
         <h1>Over the Horizon</h1>

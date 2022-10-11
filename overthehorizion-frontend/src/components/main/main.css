@@ -21,6 +21,10 @@ body {
   /* overflow: hidden; */
 }
 
+button {
+  opacity: 1;
+}
+
 h1 {
   font-size: calc(10px + 100vw/64);
 }
@@ -40,7 +44,7 @@ p {
   justify-content: center;
   flex-direction: column;
   padding: calc(10px + 100vw/64) calc(15px + 100vh/64);
-  opacity: 0.8;
+  opacity: .8;
 }
 
 .Front-Background h1, p, button {
@@ -109,14 +113,16 @@ p {
 }
 
 #Sign-Up {
-  width: 50%;
-  height: 50%;
-  visibility: visible; /* Toggle with hidden as needed */
   background-color: aliceblue;
+  position: relative;
 
-  /* position: absolute; */
 }
 
 #Sign-Up h1 {
   font-size: calc(12px + 100vw/150);
+}
+
+#Login {
+  background-color: aliceblue;
+  position: relative;
 }
