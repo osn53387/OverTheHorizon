@@ -1,7 +1,7 @@
 #Login {
     width: fit-content;
     height: fit-content;
-    padding: calc(30px + 100vw/150);
+    padding: calc(45px + 100vw/150);
     justify-content: flex-start;
     align-content: center;
     align-items: flex-start;

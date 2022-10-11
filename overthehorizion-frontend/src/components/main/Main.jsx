@@ -77,7 +77,7 @@ const Main = () => {
     <div>
       <div className="TopUI">
         <Popup trigger={<button type="button">Sign up!</button>}>
-          <SignUp />
+          <SignUp id="test" />
         </Popup>
         <Popup trigger={<button type="button">Login</button>}>
           <Login />
