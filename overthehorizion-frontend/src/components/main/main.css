@@ -101,10 +101,8 @@ p {
 .Main-Buttons button {
   font-size: calc(8px + 100vw/200);
   padding: calc(4px + 100vw/200);
-}
-
-#New-Project {
-  margin-right: 20px;
+  width: 100%;
+  margin-left: 0;
 }
 
 #Time-Remaining {

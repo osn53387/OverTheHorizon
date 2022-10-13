@@ -103,7 +103,7 @@ const Main = () => {
               Begin the Countdown
             </button>
           </div>
-          <button id="Continue-Project" type="button">
+          <button id="Continue-Project" type="button" disabled>
             Continue current journey
           </button>
         </div>
