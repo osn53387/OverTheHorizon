@@ -6,7 +6,10 @@ import { Login } from "../sub-components/Login";
 
 import Popup from "reactjs-popup";
 
-// import { Popup } from "OverTheHorizon/overthehorizion-frontend/src/components/popup/Popup.jsx"
+// To do List
+// Find out consistency for goal making button (or just disble it first)
+// Implement either mysql or postgresql
+// Fix any UI/UX problems in the end
 
 const Main = () => {
   let popup = document.getElementById("Pop-up");
@@ -89,6 +92,7 @@ const Main = () => {
         <div id="Live-Clock" className="World-Time"></div>
         <div className="Main-Buttons">
           <button id="New-Project" type="button" onClick={startNewProject}>
+            {/* Find a consistent way to make this button work */}
             Set up new project
           </button>
           <div className="Pop-up" id="Pop-up">
