@@ -6,7 +6,7 @@ import { Login } from "../sub-components/Login";
 
 import Popup from "reactjs-popup";
 
-// To do List
+// TODO List
 // Find out consistency for goal making button (or just disble it first)
 // Implement either mysql or postgresql
 // Fix any UI/UX problems in the end
